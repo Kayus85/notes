@@ -26,7 +26,10 @@ export module Util {
 			// Return HTTP resposne
 			return {
 				body,
-				statusCode
+				statusCode,
+				headers: {
+					"Content-Type": "application/json"
+				}
 			};
 		};
 	}
